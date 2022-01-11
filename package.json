@@ -8,6 +8,10 @@
     "require": "./dist/syntax.js"
   },
   "main": "./dist/syntax.js",
+  "files": [
+    "syntax.mjs",
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "rm -rf dist && yarn rollup -c"
   },
