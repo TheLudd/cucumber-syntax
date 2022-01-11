@@ -1,0 +1,17 @@
+{
+  "name": "@theludd/cucumber-syntax",
+  "version": "1.0.0",
+  "description": "Syntax for generating cucumber steps without duplication",
+  "license": "MIT",
+  "exports": {
+    "import": "./syntax.mjs",
+    "require": "./dist/syntax.js"
+  },
+  "main": "./dist/syntax.js",
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && yarn rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^2.63.0"
+  }
+}
